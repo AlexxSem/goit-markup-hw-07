@@ -20,10 +20,10 @@
   position: relative;
 }
 
-.subscribe__form-mail {
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.subscribe__form {
+  /*transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
 }
-.subscribe__input-mail {
+.subscribe__input {
   width: 358px;
   height: 50px;
   padding-left: 16px;
@@ -36,14 +36,13 @@
   border-radius: 4px;
   color: var(--third-color);
   background: var(--fourth-color);
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /*transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.subscribe__input-mail:focus {
-  outline: none;
-  border-color: var(--accent-color);
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    color: var(--third-color);
+  }
 }
 
 .subscribe-button {
@@ -63,12 +62,12 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background: var(--hover-color);
+  }
 }
 
-.subscribe-button:hover,
-.subscribe-button:focus {
-  background: var(--hover-color);
-}
 .subscribe-button__icon {
   fill: var(--third-color);
   position: absolute;

@@ -322,11 +322,11 @@ body {
   position: relative;
 }
 
-.subscribe__form-mail {
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.subscribe__form {
+  /*transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
 }
 
-.subscribe__input-mail {
+.subscribe__input {
   width: 358px;
   height: 50px;
   padding-left: 16px;
@@ -339,14 +339,14 @@ body {
   border-radius: 4px;
   color: var(--third-color);
   background: var(--fourth-color);
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /*transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.subscribe__input-mail:focus {
+.subscribe__input:focus {
   outline: none;
   border-color: var(--accent-color);
+  color: var(--third-color);
 }
 
 .subscribe-button {
@@ -441,6 +441,7 @@ body {
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__form-wrapper {
@@ -461,7 +462,7 @@ body {
   color: var(--first-color);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /*transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
 }
 
 .modal__form-input:focus {
@@ -517,6 +518,7 @@ body {
   border: 1px solid var(--first-color);
   cursor: pointer;
   margin-right: 7px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__form-checkbox:checked + .modal__form-checkbox-label::before {
@@ -971,7 +973,7 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-adress__mail {
+.contacts-adress__email {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -990,7 +992,7 @@ body {
 
 .contacts-adress__map:hover,
 :focus,
-.contacts-adress__mail:hover,
+.contacts-adress__email:hover,
 :focus,
 .contacts-adress__tel:hover,
 :focus {
